@@ -3,7 +3,7 @@
 
 html {
     /* background: #018DED url('abs.jpg'); */
-    background: #f1faee;
+    background: #191919;
     background-size: cover;
     font-family: 'helvetica neue';
     /* text-align: center; */
@@ -30,7 +30,7 @@ html {
     text-align: center;
     padding-top: 13rem;
     font-size: 20rem;
-    color: #143642; 
+    color: #00ff99; 
     /* font-family: 'Overpass Mono', monospace; */
     font-family: 'IBM Plex Mono', monospace;
     font-weight: 600;
@@ -40,16 +40,16 @@ html {
     
     width: 30rem;
     height: 30rem;
-    border: 20px solid  #143642;
+    border: 20px solid  #00ffff;
     border-radius: 50%;
     margin: 50px auto;
     position: relative;
     padding: 2rem;
     box-shadow:
-      /* 0 0 0 4px rgba(32,70,83,0.5), */
+      /* 0 0 0 4px rgba(0,0,0,0.2), */
       inset 0 0 0 3px #204653,
       inset 0 0 10px black,
-      /* 0 0 10px rgba(32,70,83,0.5); */
+      /* 0 0 10px rgba(0,0,0,0.3); */
   }
 
   .clock-face
@@ -61,7 +61,7 @@ html {
   }
 
   .hand {
-    background: black;
+    background: #ade8f4;
     position: absolute;
     top: 50%;
     transform-origin: 100%;
@@ -82,7 +82,7 @@ html {
   }
   .num12, .num3, .num6, .num9{
     font-size: 3.2rem;
-    color: #232323;
+    color: #ffffff;
   }
   .num12{
       transform: translate(43%, -40% );
@@ -101,7 +101,7 @@ html {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background: black;
+    background: #00ff99;
     position: absolute;
     top: 50%;
     transform: translate(1200%,-25%);
@@ -120,7 +120,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #0a0250;
+  color: #00bbff;
   font-size: 3rem;
 padding-right: 40px;
 }
@@ -139,7 +139,7 @@ li{
 }
 
 .day{
-  color: #0a0250;
+  color: #00bbff;
   font-size: 3rem;
   display: none;
 }
@@ -167,7 +167,7 @@ color: #000;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #03045e;
+    background-color: #00bbff;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -185,11 +185,11 @@ color: #000;
   }
   
   input:checked + .slider {
-    background-color: #3c096c;
+    background-color: #00bbff;
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #3c096c;
+    box-shadow: 0 0 1px #00bbff;
   }
   
   input:checked + .slider:before {
