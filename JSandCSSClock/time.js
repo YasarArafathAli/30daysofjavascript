@@ -1,7 +1,9 @@
 const hourHand = document.querySelector('.hour-hand');
 const minHand = document.querySelector('.min-hand');
 const secondHand = document.querySelector('.second-hand');
-const digitalTime  = document.querySelector('.digital')
+const digitalTime  = document.querySelector('.digital');
+const themebtn = document.querySelector('#theme');
+const stylesheetlink = document.querySelector('#css-file');
 function setTime() {
   const now = new Date();
 
@@ -55,3 +57,10 @@ function analogOrDigital() {
     digDiv.style.display = "block";
   }
 } 
+
+
+themebtn.addEventListener('click', () => {
+  var attrValue = document.getElementById("css-file").getAttribute("href");
+  console.log(attrValue);
+  (attrValue === "./styledark.css") ? stylesheetlink.setAttribute('href', './style.css') : null;
+})
